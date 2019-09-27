@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MuiTable from '@material-ui/core/Table';
 import TableHead from './TableHead';
 import TablePagination from './TablePagination';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 
 export const defaultFooterStyles = {};
 

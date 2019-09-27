@@ -12,7 +12,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
 import Checkbox from '@material-ui/core/Checkbox';
 import ListItemText from '@material-ui/core/ListItemText';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 import { TextField, Grid, GridList, GridListTile } from '@material-ui/core';
 
 export const defaultFilterStyles = theme => ({
@@ -54,7 +54,7 @@ export const defaultFilterStyles = theme => ({
     marginLeft: '7px',
     marginBottom: '8px',
     fontSize: '14px',
-    color: theme.palette.text.secondary,
+    // color: theme.palette.text.secondary,
     textAlign: 'left',
     fontWeight: 500,
   },
@@ -67,7 +67,7 @@ export const defaultFilterStyles = theme => ({
   checkboxFormControlLabel: {
     fontSize: '15px',
     marginLeft: '8px',
-    color: theme.palette.text.primary,
+    // color: theme.palette.text.primary,
   },
   checkboxIcon: {
     width: '32px',
@@ -75,7 +75,7 @@ export const defaultFilterStyles = theme => ({
   },
   checkbox: {
     '&$checked': {
-      color: theme.palette.primary.main,
+      // color: theme.palette.primary.main,
     },
   },
   checked: {},

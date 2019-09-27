@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MuiTableRow from '@material-ui/core/TableRow';
 import MuiTableFooter from '@material-ui/core/TableFooter';
 import MuiTablePagination from '@material-ui/core/TablePagination';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 
 const defaultPaginationStyles = {
   root: {

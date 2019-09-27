@@ -5,7 +5,7 @@ import MuiTableHead from '@material-ui/core/TableHead';
 import TableHeadRow from './TableHeadRow';
 import TableHeadCell from './TableHeadCell';
 import TableSelectCell from './TableSelectCell';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 
 const defaultHeadStyles = theme => ({
   main: {},

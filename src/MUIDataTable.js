@@ -16,7 +16,7 @@ import isEqual from 'lodash.isequal';
 import find from 'lodash.find';
 import isUndefined from 'lodash.isundefined';
 import textLabels from './textLabels';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 import { buildMap, getCollatorComparator, sortCompare } from './utils';
 
 const defaultTableStyles = {

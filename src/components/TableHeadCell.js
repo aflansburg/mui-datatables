@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import TableCell from '@material-ui/core/TableCell';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 import Tooltip from '@material-ui/core/Tooltip';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 import HelpIcon from '@material-ui/icons/Help';
 
 const defaultHeadCellStyles = theme => ({

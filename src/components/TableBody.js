@@ -5,7 +5,7 @@ import MuiTableBody from '@material-ui/core/TableBody';
 import TableBodyCell from './TableBodyCell';
 import TableBodyRow from './TableBodyRow';
 import TableSelectCell from './TableSelectCell';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 
 const defaultBodyStyles = {
   root: {},
