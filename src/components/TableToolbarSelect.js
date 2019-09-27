@@ -5,7 +5,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 import DeleteIcon from '@material-ui/icons/Delete';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 
 const defaultToolbarSelectStyles = theme => ({
   root: {

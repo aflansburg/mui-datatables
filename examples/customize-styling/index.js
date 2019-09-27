@@ -1,6 +1,6 @@
 import React from "react";
 import MUIDataTable from "../../src/";
-import {createMuiTheme, MuiThemeProvider, withStyles} from '@material-ui/core/styles';
+import {createMuiTheme, MuiThemeProvider, withStyles} from  '@material-ui/styles';
 import classnames from 'classnames';
 
 const customStyles = {

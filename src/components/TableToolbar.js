@@ -15,6 +15,7 @@ import FilterIcon from '@material-ui/icons/FilterList';
 import ReactToPrint from 'react-to-print';
 import { withStyles } from '@material-ui/core/styles';
 import { createCSVDownload } from '../utils';
+import { withTheme } from '@material-ui/styles';
 
 export const defaultToolbarStyles = theme => ({
   root: {},

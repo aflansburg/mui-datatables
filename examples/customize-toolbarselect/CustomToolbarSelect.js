@@ -1,19 +1,25 @@
-import React from "react";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
-import CompareArrowsIcon from "@material-ui/icons/CompareArrows";
-import IndeterminateCheckBoxIcon from "@material-ui/icons/IndeterminateCheckBox";
-import BlockIcon from "@material-ui/icons/Block";
-import { withStyles } from "@material-ui/core/styles";
+import React from 'react';
+import IconButton from '@material-ui/core/IconButton';
+import Tooltip from '@material-ui/core/Tooltip';
+import CompareArrowsIcon from '@material-ui/icons/CompareArrows';
+import IndeterminateCheckBoxIcon from '@material-ui/icons/IndeterminateCheckBox';
+import BlockIcon from '@material-ui/icons/Block';
+import { withStyles } from '@material-ui/styles';
 
 const defaultToolbarSelectStyles = {
-  iconButton: {
-  },
+  iconButton: {},
   iconContainer: {
-    marginRight: "24px",
+    marginRight: '24px',
+    top: '50%',
+    display: 'inline-block',
+    position: 'relative',
+    transform: 'translateY(-50%)',
+  },
+  icon: {
+    color: '#000',
   },
   inverseIcon: {
-    transform: "rotate(90deg)",
+    transform: 'rotate(90deg)',
   },
 };
 
@@ -42,18 +48,18 @@ class CustomToolbarSelect extends React.Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.iconContainer}>
-        <Tooltip title={"Deselect ALL"}>
+      <div className={'custom-toolbar-select'}>
+        <Tooltip title={'Deselect ALL'}>
           <IconButton className={classes.iconButton} onClick={this.handleClickDeselectAll}>
             <IndeterminateCheckBoxIcon className={classes.icon} />
           </IconButton>
         </Tooltip>
-        <Tooltip title={"Inverse selection"}>
+        <Tooltip title={'Inverse selection'}>
           <IconButton className={classes.iconButton} onClick={this.handleClickInverseSelection}>
-            <CompareArrowsIcon className={[classes.icon, classes.inverseIcon].join(" ")} />
+            <CompareArrowsIcon className={[classes.icon, classes.inverseIcon].join(' ')} />
           </IconButton>
         </Tooltip>
-        <Tooltip title={"Block selected"}>
+        <Tooltip title={'Block selected'}>
           <IconButton className={classes.iconButton} onClick={this.handleClickBlockSelected}>
             <BlockIcon className={classes.icon} />
           </IconButton>
@@ -63,4 +69,4 @@ class CustomToolbarSelect extends React.Component {
   }
 }
 
-export default withStyles(defaultToolbarSelectStyles, { name: "CustomToolbarSelect" })(CustomToolbarSelect);
+export default withStyles(defaultToolbarSelectStyles, { name: 'CustomToolbarSelect' })(CustomToolbarSelect);

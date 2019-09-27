@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Checkbox from '@material-ui/core/Checkbox';
 import TableCell from '@material-ui/core/TableCell';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/styles';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 
 const defaultSelectCellStyles = theme => ({

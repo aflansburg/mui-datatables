@@ -17,6 +17,7 @@ import TableResize from './components/TableResize';
 import TableToolbar from './components/TableToolbar';
 import TableToolbarSelect from './components/TableToolbarSelect';
 import textLabels from './textLabels';
+import { withStyles } from '@material-ui/styles';
 import { buildMap, getCollatorComparator, sortCompare } from './utils';
 
 const defaultTableStyles = theme => ({

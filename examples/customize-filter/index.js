@@ -1,6 +1,10 @@
-import { FormGroup, FormLabel, TextField } from '@material-ui/core';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import MUIDataTable from '../../src';
+import { createMuiTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
+
+const theme = createMuiTheme({});
 
 class Example extends React.Component {
   render() {
@@ -79,6 +83,17 @@ class Example extends React.Component {
                 </FormGroup>
               </div>
             ),
+            names: ['young', 'adult', 'middle-age', 'senior', 'elderly'],
+            logic(age, filters) {
+              const show =
+                (filters.indexOf('young') >= 0 && age <= 35) ||
+                (filters.indexOf('adult') >= 0 && age > 35 && age <= 45) ||
+                (filters.indexOf('middle-age') >= 0 && age > 45 && age <= 65) ||
+                (filters.indexOf('senior') >= 0 && age > 65 && age <= 75) ||
+                (filters.indexOf('elderly') >= 0 && age > 75);
+              const filtered = !show;
+              return filtered;
+            },
           },
           print: false,
         },
@@ -149,4 +164,9 @@ class Example extends React.Component {
   }
 }
 
-export default Example;
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <Example />
+  </ThemeProvider>,
+  document.getElementById('app-root'),
+);
