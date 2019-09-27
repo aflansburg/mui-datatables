@@ -1,5 +1,3 @@
-import { Grid, GridList, GridListTile, TextField } from '@material-ui/core';
-
 import Button from '@material-ui/core/Button';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControl from '@material-ui/core/FormControl';
@@ -14,8 +12,6 @@ import React from 'react';
 import Select from '@material-ui/core/Select';
 import Typography from '@material-ui/core/Typography';
 import classNames from 'classnames';
-import Checkbox from '@material-ui/core/Checkbox';
-import ListItemText from '@material-ui/core/ListItemText';
 import { withStyles } from '@material-ui/styles';
 import { TextField, Grid, GridList, GridListTile } from '@material-ui/core';
 
